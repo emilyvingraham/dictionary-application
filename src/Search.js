@@ -6,15 +6,18 @@ export default function Search() {
     const [word, setWord] = useState('');
 
     function handleResponse(response) {
-        console.log(response.data);
+        console.log(response.data.meanings);
     }
 
     function handleSubmit(event) {
         event.preventDefault();
         alert(`Searching for ${word}`);
 
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+        let apiKey = '47ce0ocdabaf4a2e81b031bb9t47a0e0';
+        let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
         axios.get(apiUrl).then(handleResponse);
+
+        console.log(apiUrl);
     }
 
     function handleChange(event) {
