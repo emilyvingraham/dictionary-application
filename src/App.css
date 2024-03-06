@@ -33,6 +33,13 @@
     margin-left: 0px;
 }
 
+.Phonetics button {
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+}
+
 .Results h4 {
     font-weight: 300;
 }
