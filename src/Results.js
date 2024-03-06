@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 import Meaning from "./Meaning.js";
 
 export default function Results(props) {
-    
-
     if (props.results) {
         return (
             <div className="Results">
@@ -13,14 +11,12 @@ export default function Results(props) {
                     return (
                         <div key={index}>
                             <Meaning meaning={meaning}/>
-                        </div>
+                            </div>
                     )
                 })}
             </div>
-        )
-        
+        );
     } else {
         return null;
     }
-
 }

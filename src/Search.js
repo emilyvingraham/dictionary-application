@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Results from "./Results.js";
+import Results from './Results.js';
 import axios from 'axios';
 import './App.css';
 
@@ -8,15 +8,13 @@ export default function Search() {
     const [results, setResults] = useState(null);
 
     function handleResponse(response) {
-        setResults(response.data);
+        setResults(response.data[0]);
     }
 
     function handleSubmit(event) {
         event.preventDefault();
-        
 
-        let apiKey = '47ce0ocdabaf4a2e81b031bb9t47a0e0';
-        let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
+        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
         axios.get(apiUrl).then(handleResponse);
     }
 
@@ -44,7 +42,7 @@ export default function Search() {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <Results results={results}/>
+                        <Results results={results} />
                     </div>
                 </div>
             </div>
