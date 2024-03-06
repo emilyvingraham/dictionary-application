@@ -10,7 +10,7 @@ export default function App() {
                     <h1>Dictionary Application</h1>
                 </header>
                 <main>
-                    <Search />
+                    <Search defaultWord="brave"/>
                 </main>
                 <footer>
                     This project was built by{' '}
