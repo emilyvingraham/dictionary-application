@@ -1,8 +1,16 @@
 :root {
-        --primary-synonyms: rgba(64, 66, 88, 0.8);
+    --primary-synonyms: rgba(64, 66, 88, 0.8);
 }
 
 .Synonyms p {
     color: var(--primary-synonyms);
     font-weight: 500;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .Synonyms p {
+        display: inline-block;
+    }
 }

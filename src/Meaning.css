@@ -10,3 +10,9 @@
 .Meaning strong {
     font-weight: 500;
 }
+
+@media (max-width: 900px) {
+    .Meaning p {
+        font-size: 12px;
+    }
+}
