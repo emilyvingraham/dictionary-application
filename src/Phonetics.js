@@ -1,8 +1,9 @@
 import React from 'react';
+import './Phonetics.css';
 
 export default function Phonetics(props) {
     return (
-        <div className="Phonetics d-flex justify-content-center my-2">
+        <div className="Phonetics my-2 d-flex justify-content-center">
             <button className="bg-transparent p-0">
                 <a
                     className="fs-6 text-decoration-none"

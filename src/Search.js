@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Results from './Results.js';
 import axios from 'axios';
-import './App.css';
+import './Search.css';
 
 export default function Search(props) {
     const [word, setWord] = useState(props.defaultWord);
@@ -36,19 +36,19 @@ export default function Search(props) {
             <div className="Search container">
                 <div className="row">
                     <div className="col-md-12">
-                        <form onSubmit={defaultSubmit}>
-                            <input
-                                type="text"
-                                className="w-50"
-                                onChange={handleChange}
-                            />
-                            <button type="button" className="ms-3 w-25">
-                                Search
-                            </button>
-                            <h6 className="text-start">
-                                <i>i.e. brave, free, tea</i>
-                            </h6>
-                        </form>
+                        
+                            <form onSubmit={defaultSubmit} className="w-50 d-block m-auto">
+                                <input
+                                    type="text"
+                                    onChange={handleChange}
+                                    className="form-control"
+                                    defaultValue="Brave"
+                                />
+                                <h6 className="text-start">
+                                    <i>i.e. dog, free, tea</i>
+                                </h6>
+                            </form>
+                        
                     </div>
                     <div className="row">
                         <div className="col-md-12">

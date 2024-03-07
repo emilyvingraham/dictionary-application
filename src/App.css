@@ -1,20 +1,25 @@
-.App {
-    text-align: center;
+:root {
+    --primary-container: rgba(155, 171, 184, 0.4);
+    --primary-border: rgba(155, 171, 184, 1);
+    --primary-links: rgba(10, 88, 202, 1);
 }
 
 .App-container {
-    border: 1px solid black;
+    border: 6px solid var(--primary-border);
     width: 60%;
     margin: 10px auto;
     border-radius: 10px;
+    background-color: var(--primary-container);
 }
 
 .App h1 {
     margin: 6px auto;
+    font-weight: bolder;
 }
 
 .App footer {
     font-size: 14px;
+    text-align: center;
 }
 
 .App footer a {
@@ -25,55 +30,13 @@
 
 .App footer a:hover {
     text-decoration: underline;
-    color: blue;
+    color: var(--primary-links);
 }
-
-.Meaning p {
-    text-align: center;
-    margin-left: 0px;
-}
-
-.Phonetics button {
-    border-bottom-color: transparent !important;
-    border-top-color: transparent !important;
-    border-right-color: transparent !important;
-    border-left-color: transparent !important;
-}
-
-.Results h4 {
-    font-weight: 300;
-}
-
-.Search form {
-    margin-top: 20px;
-}
-
-.Search button {
-    border-radius: 4px;
-    border: 1px solid black;
-}
-
-.Search input {
-    border-radius: 4px;
-    border: 1px solid black;
-}
-
-.Search h6 {
-    margin-left: 160px;
-    font-weight: 400;
-    padding-top: 2px;
-    font-size: 14px;
-}
-
 
 
 @media (max-width: 900px) {
     .App-container {
         width: 80%;
-    }
-    .Search h6 {
-        margin-left: 34px;
-        font-size: 12px;
     }
 
     .App footer {

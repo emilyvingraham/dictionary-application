@@ -1,0 +1,12 @@
+:root {
+    --primary-section: rgba(241, 240, 232, 0.9);
+}
+
+
+.Phonetics button {
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+}
+
